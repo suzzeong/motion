@@ -32,7 +32,7 @@ label {
 }
 
 body {
-  background: url('../assets/house-7497001_1280.png') center/cover no-repeat;
+  background: url('../assets/house.png') center/cover no-repeat;
   font-family: Roboto, Oxygen, sans-serif;
   display: flex;
   justify-content: center;
