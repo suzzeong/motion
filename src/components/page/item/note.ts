@@ -12,7 +12,7 @@ export class NoteComponent extends BaseComponent<HTMLElement> {
     titleElement.textContent = title;
 
     const bodyElement = this.element.querySelector(
-      '.note__title'
+      '.note__body'
     )! as HTMLParagraphElement;
     bodyElement.textContent = body;
   }
