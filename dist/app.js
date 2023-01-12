@@ -1,4 +1,4 @@
-import { InputDialog } from './components/dialog/dialog.js';
+import { InputDialog, } from './components/dialog/dialog.js';
 import { TodoComponent } from './components/page/item/todo.js';
 import { NoteComponent } from './components/page/item/note.js';
 import { ImageComponent } from './components/page/item/image.js';
@@ -15,6 +15,14 @@ class App {
         this.bindElementToDialog('#new-video', MediaSectionInput, (input) => new VideoComponent(input.title, input.url));
         this.bindElementToDialog('#new-note', TextSectionInput, (input) => new NoteComponent(input.title, input.body));
         this.bindElementToDialog('#new-todo', TextSectionInput, (input) => new TodoComponent(input.title, input.body));
+        this.page.addChild(new ImageComponent('Image Title', 'https://picsum.photos/800/400'));
+        this.page.addChild(new VideoComponent('Video Title', 'https://youtu.be/W7uLhS9qfis'));
+        this.page.addChild(new NoteComponent('Note Title', "Don't forget to code your dream"));
+        this.page.addChild(new TodoComponent('Todo Title', 'TypeScript Course!'));
+        this.page.addChild(new ImageComponent('Image Title', 'https://picsum.photos/800/400'));
+        this.page.addChild(new VideoComponent('Video Title', 'https://youtu.be/W7uLhS9qfis'));
+        this.page.addChild(new NoteComponent('Note Title', "Don't forget to code your dream"));
+        this.page.addChild(new TodoComponent('Todo Title', 'TypeScript Course!'));
     }
     bindElementToDialog(selector, InputComponent, makeSection) {
         const element = document.querySelector(selector);
