@@ -13,7 +13,8 @@
   --translucent-black: #00000099;
 }
 
-ul, li {
+ul,
+li {
   list-style: none;
   padding-left: 0;
 }
@@ -36,7 +37,8 @@ button {
   outline: 0;
 }
 
-input, textarea {
+input,
+textarea {
   background-color: var(--text-edit-bg-color);
   color: var(--smokywhite);
   font-size: 1.5em;
@@ -125,7 +127,7 @@ body {
   text-align: center;
 }
 
-/* --Dialog-- */
+/* ---- Dialog ---- */
 .dialog {
   display: flex;
   align-items: center;
@@ -181,7 +183,7 @@ body {
   padding: 0.5em 1.5em;
 }
 
-/* -- PAGE ITEM */
+/* ---- PAGE ITEM ---- */
 .page-item {
   margin: 1.5em;
   display: flex;
@@ -196,14 +198,14 @@ body {
 }
 
 .page-item__title {
-  color: var(--text-accent-color)
+  color: var(--text-accent-color);
 }
 
 .page-item__body {
   width: 100%;
 }
 
-/* --Image & Video */
+/* ---- Image & Video ---- */
 .video,
 .image {
   display: flex;
@@ -233,11 +235,11 @@ body {
   height: 100%;
 }
 
-/* -- Note -- */
+/* ---- Note ---- */
 .note {
   padding: 0.5em;
 }
-/* -- TODO -- */
+/* ---- TODO ---- */
 .todo {
   padding: 0.5em;
 }
@@ -255,4 +257,10 @@ body {
 .todo-checkbox {
   transform: scale(1.5);
   accent-color: var(--smokywhite);
+}
+
+/* ---- Drag and Drop ---- */
+
+.mute-children * {
+  pointer-events: none;
 }
